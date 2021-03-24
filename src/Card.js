@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "./Card.css";
 import tick from "./Tick.svg";
 
@@ -9,7 +9,7 @@ const Card = (props) => {
   if (matched) {
     cardChoice = (
       <div className="cardFront">
-        <img className="checkImg" src={tick}/>
+        <img className="checkImg" alt="Green Check Mark" src={tick}/>
         <p className="emoji">{emoji}</p>
       </div>
     );

@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from "react";
+import React, { useRef, useEffect } from "react";
 import "./Countdown.css";
 
 const Countdown = (props) => {
@@ -12,7 +12,7 @@ const Countdown = (props) => {
       intervalRef.current = setInterval(decreaseTime, 1000);
     } 
     return () => clearInterval(intervalRef.current);
-  }, [timer]);
+  }, [timer, decreaseTime]);
   
   return (
       <p>Time Left: {timer}</p>

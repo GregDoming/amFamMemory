@@ -5,7 +5,7 @@ import "./CardRow.css";
 const CardRow = (props) => {
   const { column, handleCardClick, columnMap } = props;
   return (
-    <div class="cardRowContainer">
+    <div className="cardRowContainer">
     {columnMap.map((cardObj, index) => {
       return (
         <Card
