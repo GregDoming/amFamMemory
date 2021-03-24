@@ -1,0 +1,8 @@
+.timerContainer {
+  display: flex;
+  flex-flow: row;
+}
+
+p {
+  font-size: 25px
+}

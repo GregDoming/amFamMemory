@@ -1,0 +1,45 @@
+.card {
+  height: 100px;
+  width: 100px;
+  border-style: solid;
+  margin: .5px;
+  background-color: red;
+  position: relative;
+  display: inline-block;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+  .card:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0; }
+
+.cardFront {
+  height: 100px;
+  width: 100px;
+  margin: .5px;
+  border-style: solid;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+}
+
+.checkImg {
+  opacity: .5;
+  width: 90%;
+  height: 90%;
+}
+
+.emoji {
+  position: absolute;
+  z-index: 999;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 40%; /* Adjust this value to move the positioned div up and down */
+  text-align: center;
+  width: 50%;
+  font-size: 35px
+}
+

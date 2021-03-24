@@ -1,0 +1,4 @@
+.cardRowContainer {
+  display: flex;
+  flex-direction: row
+}
